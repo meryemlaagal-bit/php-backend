@@ -69,8 +69,7 @@ function diviser(float $a,float $b):float{
   float $remise = 0, float $tva = 20.0): float   {
    return calculttc(calculremise($prixUnitaire*$quantite,$remise),$tva ) ;
 }
-echo $montant=calculfacture(100,10,10,20);
-echo $mmm= number_format($montant, 2, ",", " ") . " MAD" ."<br>";
+
 //etape 4
  function moyenne(float ...$notes): float   {
     if (count($notes)==0){
@@ -81,7 +80,6 @@ echo $mmm= number_format($montant, 2, ",", " ") . " MAD" ."<br>";
     
    
 }
-echo $v=moyenne(2,6,9);
 function aireCercle(float $rayon): float{
     return round($rayon*$rayon*M_PI,2);
 }
@@ -117,7 +115,7 @@ function fibonacci(int $n): array{
     for ($i=2; $i < $n; $i++) { 
         array_push($s,$s[$i-1]+$s[$i-2]);
     }
-   return $s
+   return $s;
 }
 function pgcd(int $a, int $b): int {
     while ($b != 0) {
